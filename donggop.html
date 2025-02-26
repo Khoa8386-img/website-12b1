@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Đóng góp ý kiến</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container 
+        {
+            background: white;
+            width: 50%;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 
+        {
+            color: #c0392b;
+            font-size: 24px;
+        }
+
+        h3 
+        {
+            color: #e74c3c;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        label 
+        {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+
+        input, textarea 
+        {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus
+        {
+            border-color: #e74c3c;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            background-color: #fff8e1;
+        }
+        .submit-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Đóng góp ý kiến cho lớp 12B1</h2>
+
+        <h3>1. Thông tin người góp ý</h3>
+        <form action="nhiemvu3.html">
+            <label>Họ và tên:</label>
+            <input type="text" name="txtten" required placeholder="Nhập họ và tên của bạn">
+            
+            <label>Địa chỉ email:</label>
+            <input type="email" name="txtemail" required placeholder="Nhập email của bạn">
+            
+            <h3>2. Đóng góp ý kiến</h3>
+            <label>Ý kiến đóng góp:</label>
+            <textarea name="txtcomment" rows="6" required placeholder="Viết ý kiến của bạn..."></textarea>
+            
+            <button type="submit" class="submit-btn">Gửi góp ý</button>
+        </form>
+    </div>
+
+</body>
+</html>
